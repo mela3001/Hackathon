@@ -1,0 +1,218 @@
+ /* *{
+            border: 1px solid red;
+        } */
+        .img-logo{
+            width: 80px;
+            height: 60px;
+        }
+        .img-logo img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .img-logo2{
+            width: 100px;
+            height: 50px;
+            margin-left: 10px;
+            /* height: 100px; */
+        }
+        .img-logo2 img{
+            width: 100%;
+            height: 100%;
+        }
+        .img-logo1{
+            width: 158px;
+            height: 50px;
+            margin-right: 2rem;
+            /* height: 100px; */
+        }
+        .img-logo1 img{
+            width: 100%;
+            height: 100%;
+            
+        }
+
+        .hero{
+            background-image: url('../img/3390206750.gif'); 
+            height: 630px; 
+            background-repeat: no-repeat; 
+            width: 100%; 
+            background-size: cover;
+        }
+
+        header{
+            background-color: white;
+        }
+
+        header ul{
+            font-family: "Chivo Mono", monospace;
+        }
+
+        .nav li a{
+            color: rgb(0, 218, 106);
+            font-size: 20px;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: 0.5s ease;
+        }
+
+        header ul:hover li a{
+            color: rgb(0, 218, 106);
+        }
+
+        header ul:hover li a:not(:hover){
+            color: rgb(0, 218, 106);
+            opacity: 0.5;
+            filter: blur(1px);
+        }
+         
+
+
+        body{
+            background-color: rgb(0, 0, 46);
+        }
+
+        .explicacion{
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            color: rgb(70, 70, 203);
+        }
+        .explicacion h3{
+            color: rgb(52, 52, 149);
+        }
+        .explicacion h5{
+            color: rgba(70, 70, 203, 0.529);
+        }
+
+        .explicacion h5 a{
+            color: rgba(70, 70, 203, 0.529);
+        }
+        .explicacion h5 a:hover{
+            color: rgb(0, 218, 106);
+        }
+        .empresa{
+            color: rgb(0, 218, 106);
+        }
+        button{
+            background-color: black;
+            cursor: pointer;
+            border: none;
+            padding: 16px 32px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            position: relative;
+            border-radius: 10px;
+        }
+
+        button::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, blue, rgb(0, 255, 255),rgb(0, 255, 72),rgb(204, 0, 255),blue);
+            background-size: 800%;
+            border-radius: 10px;
+            filter: blur(8px);
+            animation: glowing 20s linear infinite;
+        }
+
+        button:hover{
+            transition: all 0.5s;
+            transform: scale(1.06);
+        }
+        
+
+        @keyframes glowing {
+            0%{
+                background-position: 0 0;
+            }
+            50%{
+                background-position: 400% 0 ;
+            }
+            100%{
+                background-position: 0 0;
+            }
+        }
+
+        .fases-evento{
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            color: rgb(70, 70, 203);
+        }
+        .fases-evento h5{
+            color: rgba(70, 70, 203, 0.529);
+        }
+        .fases-evento h3{
+            color: rgb(52, 52, 149);
+        }
+
+        .fases-borde{
+            width: 70%;
+            border: 2px solid grey;
+            border-radius: 70px;
+            padding: 15px;
+        }
+
+        .fases{
+            width: 100%;
+        }
+
+        .fase{
+            width: 8rem;
+        }
+
+        .icono{
+            width: 4rem;
+        }
+
+        .logo-innicia{
+            filter: drop-shadow(1px 0px 2px #FC0);
+        }
+
+        .logos-pie{
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            color: rgb(70, 70, 203);
+        }
+
+        .pie{
+            width: 70%;
+        }
+        
+        /* .borde-pie{
+            border-left: 1px solid grey;
+        } */
+
+        .icono-pie{
+            width: 100px;
+        }
+
+        .icono-pie-grande{
+            width: 150px;
+        }
+
+        .icono-participan{
+            margin: 0 5px;
+        }
+
+        .pie-texto{
+            color: rgba(0, 218, 105, 0.492);
+        }
+
+
+
+
+        /* FAQS */
+
+        .icono-faqs{
+            width: 100px;
+            filter: drop-shadow(1px 0px 4px rgb(0, 218, 106));
+            box-shadow: rgba(85, 91, 255, 0.503) 0px 0px 0px 3px, rgba(30, 193, 27, 0.497) 0px 0px 0px 6px;
+            margin-bottom: 1rem;
+            padding: 10px;
+        }
